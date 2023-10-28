@@ -1,0 +1,9 @@
+Honda Challenge:
+pathfinding
+non-gps options for precision
+if you know the space already, can potentially use known acceleration to predict where you will end up
+ping devices by having devices in the building to triangulate (wouldn't work in concrete buildings)
+high traffice and data usage would affect space
+SLAM algorithm? 
+Wifi router boxes to triangulate (schools have around 65 for reference so there are plenty to use for this)
+Looking up triangulating based on wifi signals
