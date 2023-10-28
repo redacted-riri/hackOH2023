@@ -1,0 +1,44 @@
+{
+    "buildingID":"ID",
+    "buildingName":"NAME",
+    "floorPlan":[
+	{
+	    "floor":1,
+	    "imageURL":"IMAGE1.PNG"
+	},
+		{
+	    "floor":2,
+	    "imageURL":"IMAGE2.PNG"
+	}
+	],
+    "locations": [
+	{
+	    "id":"ID",
+	    "name":"NAME",
+	    "position":[{"x":10, "y":10, "floor":1}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":"ID",
+	    "name":"NAME",
+	    "position":[{"x":10, "y":10, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":"ID",
+	    "name":"NAME",
+	    "position":[{"x":5, "y":5, "floor":1}],
+	    "stair":true,
+	    "stairID":1
+	},
+	{
+	    "id":"ID",
+	    "name":"NAME",
+	    "position":[{"x":5, "y":5, "floor":2}],
+	    "stair":true,
+	    "stairID":1
+	}	
+    ]
+}
