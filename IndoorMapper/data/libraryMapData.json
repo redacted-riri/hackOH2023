@@ -1,0 +1,120 @@
+{
+    "buildingID":0,
+    "buildingName":"18th Library",
+    "floorPlan":[
+	{
+	    "floor":0,
+	    "imageURL":"/photos/basement2.png"
+	},
+		{
+	    "floor":1,
+	    "imageURL":"/photos/floor1.png"
+	},
+	{
+	    "floor":2,
+	    "imageURL":"IMAGE2.PNG"
+	},
+	{
+	    "floor":3,
+	    "imageURL":"IMAGE2.PNG"
+	},
+	{
+	    "floor":4,
+	    "imageURL":"IMAGE2.PNG"
+	}
+	],
+    "locations": [
+	{
+	    "id":40,
+	    "name":"040",
+	    "position":[{"x":322, "y":322, "floor":0}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":"4",
+	    "name":"004",
+	    "position":[{"x":2530, "y":2200, "floor":0}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":126,
+	    "name":"126",
+	    "position":[{"x":280, "y":1650, "floor":1}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":270,
+	    "name":"270",
+	    "position":[{"x":2000, "y":160, "floor":1}],
+	    "stair":false,
+	    "stairID":1
+	},
+
+	{
+	    "id":9741,
+	    "name":"Stairwell 1-0",
+	    "position":[{"x":2440, "y":800, "floor":0}],
+	    "stair":true,
+	    "stairID":10
+	},
+	{
+	    "id":9742,
+	    "name":"Stairwell 2-0",
+	    "position":[{"x":110, "y":400, "floor":0}],
+	    "stair":true,
+	    "stairID":20
+	},	
+	{
+	    "id":1741,
+	    "name":"Stairwell 1-1",
+	    "position":[{"x":2340, "y":700, "floor":1}],
+	    "stair":true,
+	    "stairID":11
+	},
+	{
+	    "id":1742,
+	    "name":"Stairwell 2-1",
+	    "position":[{"x":110, "y":1400, "floor":1}],
+	    "stair":true,
+	    "stairID":21
+	},	
+	{
+	    "id":2741,
+	    "name":"Stairwell 1-2",
+	    "position":[{"x":2120, "y":740, "floor":2}],
+	    "stair":true,
+	    "stairID":12
+	},
+	{
+	    "id":2742,
+	    "name":"Stairwell 2-2",
+	    "position":[{"x":75, "y":1150, "floor":2}],
+	    "stair":true,
+	    "stairID":22
+	},
+	{
+	    "id":9990,
+	    "name":"Elevator",
+	    "position":[{"x":2170, "y":865, "floor":0}],
+	    "stair":true,
+	    "stairID":990
+	},
+	{
+	    "id":9991,
+	    "name":"Elevator",
+	    "position":[{"x":2150, "y":875, "floor":1}],
+	    "stair":true,
+	    "stairID":991
+	},
+	{
+	    "id":9992,
+	    "name":"Elevator",
+	    "position":[{"x":1870, "y":800, "floor":2}],
+	    "stair":true,
+	    "stairID":992
+	}		
+    ]
+}
