@@ -1,4 +1,4 @@
-import data1 from './mapData.json';
+import data1 from './data/mapData.json';
 
 let mapData = {};
 let currLoc;
@@ -19,10 +19,14 @@ function loadNewBuilding(buildingID, locationID) {
     updateMap();
 }
 
-function loadNewLocations(currDestID, destLocID) {
-    currLoc = currDestID;
+export function loadNewDestination(destLocID) {
     destLoc = destLocID;
-    updateMap;
+    console.log(destLoc);
+}
+
+export function loadNewStart(currDestID) {
+    currLoc = currDestID;
+    console.log(currLoc);
 }
 
 // On update to a drop down (repath) or on load building
