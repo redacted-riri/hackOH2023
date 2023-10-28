@@ -1,0 +1,56 @@
+{
+    "buildingID":0,
+    "buildingName":"18th Library",
+    "floorPlan":[
+	{
+	    "floor":0,
+	    "imageURL":"/photos/basement2.png"
+	},
+		{
+	    "floor":1,
+	    "imageURL":"/photos/floor1.png"
+	},
+	{
+	    "floor":2,
+	    "imageURL":"IMAGE2.PNG"
+	},
+	{
+	    "floor":3,
+	    "imageURL":"IMAGE2.PNG"
+	},
+	{
+	    "floor":4,
+	    "imageURL":"IMAGE2.PNG"
+	}
+	],
+    "locations": [
+	{
+	    "id":40,
+	    "name":"040",
+	    "position":[{"x":322, "y":322, "floor":0}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":"4",
+	    "name":"004",
+	    "position":[{"x":2530, "y":2200, "floor":0}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":126,
+	    "name":"126",
+	    "position":[{"x":280, "y":1650, "floor":1}],
+	    "stair":true,
+	    "stairID":1
+	},
+	{
+	    "id":"ID",
+	    "name":"NAME",
+	    "position":[{"x":5, "y":5, "floor":2}],
+	    "stair":true,
+	    "stairID":1
+	}	
+    ]
+}
