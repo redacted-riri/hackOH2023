@@ -7,4 +7,17 @@ Our project was for the Honda challenge focused on improving interior navigation
 navigation indoors, mainly that GPS struggles to work as precisely and reliably. Our solution was then to look for solutions
 that would have the least reliance on external factors, and we managed to come up with a solution that doesn't require any network access
 at all. 
-Introducing, product name! 
+Introducing, product name!
+
+Let us walk you through how this product could help a person in their daily life. You show up to a building you haven't been in before
+for a meeting, and whoops! You're almost late and don't know your way around. By scanning a QR code that is placed by the entrances of
+the building, our mobile app allows you to search up your destination and uses a path finding algorithm to get you to your destination 
+in the most optimized way.
+As an added bonus, there is the ability to toggle on the stairwell paths or just find paths that use an elevator for accessibility.* soon *
+
+So here's how we did it.
+We made simple maps that could easily be made for any building, all that is needed is a black and white map that is then turned into a 2d
+array using the values of 0's and 1's from the colors of the pixels provided. That array is then used to navigate and calculate the best 
+direction to go in the space provided. 
+Our mobile app can be downloaded on (ios or android or both) and it holds the library of QR codes where each room in the building has its
+own destination. 
