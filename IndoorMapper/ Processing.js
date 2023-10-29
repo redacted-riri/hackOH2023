@@ -4,7 +4,7 @@ let currLoc;
 let destLoc;
 let currBuilding;
 let locations;
-let drawnMap = new Image();
+let path2d;
 
 
 function loadBuilding(locationID) {
@@ -56,18 +56,10 @@ function findPath(currLoc, destLoc) {
     var finder = new PF.AStarFinder();
     var path = finder.findPath(77, 184, 179, 79, grid);
     console.log(path);
-    let path2d = new Path2D();
+    path2d = new Path2D();
     
     for (let i = 1; i < path.length; i++) {
         path2d.lineTo(path[i][1]*10, path[i][0]*10);
     }
-
-    let img = new Image();
-    img.src="data/photos/basement2.png";
-    let canvas = new OffscreenCanvas(img.width, img.height);
-    let ctx = canvas.getContext('2d');
-    ctx.drawImage(img);
-    ctx.stroke(path2d);
-
-    drawnMap.src = canvas.toDataURL();
+    
 }

@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from 'react';
-import { View, Image, ImageBackground, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
+import Svg, { Path } from 'react-native-svg';
 
 // Main App Window 
 export default function App() {
@@ -23,8 +24,9 @@ export default function App() {
   const [startValue, setStartValue] = useState(null);
   const [endValue, setEndValue] = useState(null);
   const [items, setItems] = useState([
-    {label: 'Room 204', value: '204'},
-    {label: 'Room 305', value: '305'}
+    {label: 'Room 040', value: '40'},
+    {label: 'Room 126', value: '126'},
+    {label: 'Room 270', value: '270'}
   ]);
 
   return (
@@ -72,7 +74,7 @@ export default function App() {
             contentHeight={200}
           >
             <Image
-              style={{ width: '100%', height: '100%', resizeMode: 'contain' }}
+              style={{ width: '100%', height: '100%', resizeMode: 'contain', position:'relative'}}
               source={require('./data/photos/basement2.png')}
             />
         </ReactNativeZoomableView>
