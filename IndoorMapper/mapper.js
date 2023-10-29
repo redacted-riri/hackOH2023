@@ -1,12 +1,11 @@
 import React, { Component} from 'react';
 import {Platform} from 'react-native';
 import Canvas, {Image as CanvasImage, Path2D, ImageData} from 'react-native-canvas';
-import {path, findPath } from './ Processing.js'
+import path  from './ Processing'
+import {findPath}  from './ Processing.js'
 
 export default class Mapper extends Component {
-    handleCanvas = (canvas) => {
-
-        findPath();
+    handleCanvas(canvas) {
 
         const context = canvas.getContext('2d');
 
