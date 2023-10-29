@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { View, Image, ImageBackground, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
@@ -72,7 +72,7 @@ export default function App() {
             contentHeight={200}
           >
             <Image
-              style={{ width: '100%', height: '100%', resizeMode: 'contain' }}
+              style={{ width: '100%', height: '100%', resizeMode: 'contain', position:'relative'}}
               source={require('./data/photos/basement2.png')}
             />
         </ReactNativeZoomableView>
