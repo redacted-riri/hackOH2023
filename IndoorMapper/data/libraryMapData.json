@@ -16,11 +16,11 @@
 	},
 	{
 	    "floor":3,
-	    "imageURL":"IMAGE2.PNG"
+	    "imageURL":"/photos/floor3.png"
 	},
 	{
 	    "floor":4,
-	    "imageURL":"IMAGE2.PNG"
+	    "imageURL":"/photos/floor4.png"
 	}
 	],
     "locations": [
@@ -32,7 +32,7 @@
 	    "stairID":1
 	},
 	{
-	    "id":"4",
+	    "id":4,
 	    "name":"004",
 	    "position":[{"x":2530, "y":2200, "floor":0}],
 	    "stair":false,
@@ -46,9 +46,261 @@
 	    "stairID":1
 	},
 	{
+	    "id":128,
+	    "name":"128",
+	    "position":[{"x":475, "y":1650, "floor":1}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":136,
+	    "name":"136",
+	    "position":[{"x":350, "y":620, "floor":1}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":200,
+	    "name":"200",
+	    "position":[{"x":1950, "y":1100, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":205,
+	    "name":"205",
+	    "position":[{"x":2025, "y":1525, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":206,
+	    "name":"206",
+	    "position":[{"x":1775, "y":1575, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":210,
+	    "name":"210",
+	    "position":[{"x":1400, "y":1750, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
 	    "id":270,
 	    "name":"270",
-	    "position":[{"x":2000, "y":160, "floor":1}],
+	    "position":[{"x":2000, "y":160, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":280,
+	    "name":"280",
+	    "position":[{"x":1900, "y":400, "floor":2}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":320,
+	    "name":"320",
+	    "position":[{"x":2500, "y":1800, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":325,
+	    "name":"325",
+	    "position":[{"x":1500, "y":1380, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":327,
+	    "name":"327",
+	    "position":[{"x":1240, "y":1360, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":329,
+	    "name":"329",
+	    "position":[{"x":940, "y":1300, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":340,
+	    "name":"340",
+	    "position":[{"x":1300, "y":860, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":342,
+	    "name":"342",
+	    "position":[{"x":135, "y":120, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":344,
+	    "name":"344",
+	    "position":[{"x":540, "y":150, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":346,
+	    "name":"346",
+	    "position":[{"x":450, "y":440, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":350,
+	    "name":"350",
+	    "position":[{"x":1350, "y":250, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":352,
+	    "name":"352",
+	    "position":[{"x":2175, "y":250, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":354,
+	    "name":"354",
+	    "position":[{"x":3015, "y":170, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":356,
+	    "name":"356",
+	    "position":[{"x":3000, "y":380, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":358,
+	    "name":"358",
+	    "position":[{"x":3000, "y":630, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":360,
+	    "name":"360",
+	    "position":[{"x":2850, "y":1115, "floor":3}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":400,
+	    "name":"400",
+	    "position":[{"x":2210, "y":1320, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":401,
+	    "name":"401",
+	    "position":[{"x":2000, "y":1585, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":402,
+	    "name":"402",
+	    "position":[{"x":2015, "y":1360, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":403,
+	    "name":"403",
+	    "position":[{"x":2170, "y":1590, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":405,
+	    "name":"405",
+	    "position":[{"x":2350, "y":1600, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":410,
+	    "name":"410",
+	    "position":[{"x":2715, "y":1525, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":412,
+	    "name":"412",
+	    "position":[{"x":2715, "y":1750, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":414,
+	    "name":"414",
+	    "position":[{"x":2600, "y":2000, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":415,
+	    "name":"415",
+	    "position":[{"x":2335, "y":1750, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":416,
+	    "name":"416",
+	    "position":[{"x":2275, "y":2000, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":417,
+	    "name":"417",
+	    "position":[{"x":2175, "y":1750, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":418,
+	    "name":"418",
+	    "position":[{"x":2000, "y":2025, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":419,
+	    "name":"419",
+	    "position":[{"x":2000, "y":1750, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":470,
+	    "name":"470",
+	    "position":[{"x":2075, "y":500, "floor":4}],
+	    "stair":false,
+	    "stairID":1
+	},
+	{
+	    "id":490,
+	    "name":"490",
+	    "position":[{"x":2350, "y":500, "floor":4}],
 	    "stair":false,
 	    "stairID":1
 	},
@@ -96,6 +348,35 @@
 	    "stairID":22
 	},
 	{
+	    "id":2742,
+	    "name":"Stairwell 1-3",
+	    "position":[{"x":2610, "y":920, "floor":3}],
+	    "stair":true,
+	    "stairID":13
+	},
+	{
+	    "id":2742,
+	    "name":"Stairwell 2-3",
+	    "position":[{"x":95, "y":1420, "floor":3}],
+	    "stair":true,
+	    "stairID":23
+	},
+	{
+	    "id":2742,
+	    "name":"Stairwell 1-4",
+	    "position":[{"x":2400, "y":860, "floor":4}],
+	    "stair":true,
+	    "stairID":14
+	},
+	{
+	    "id":2742,
+	    "name":"Stairwell 2-4",
+	    "position":[{"x":110, "y":1300, "floor":4}],
+	    "stair":true,
+	    "stairID":24
+	},
+
+	{
 	    "id":9990,
 	    "name":"Elevator",
 	    "position":[{"x":2170, "y":865, "floor":0}],
@@ -115,6 +396,20 @@
 	    "position":[{"x":1870, "y":800, "floor":2}],
 	    "stair":true,
 	    "stairID":992
-	}		
+	},
+	{
+	    "id":9993,
+	    "name":"Elevator",
+	    "position":[{"x":2330, "y":950, "floor":3}],
+	    "stair":true,
+	    "stairID":993
+	},
+	{
+	    "id":9994,
+	    "name":"Elevator",
+	    "position":[{"x":2130, "y":865, "floor":4}],
+	    "stair":true,
+	    "stairID":994
+	}
     ]
 }
