@@ -24,6 +24,7 @@
     "react-native-image-zoom-viewer": "^3.0.1",
     "react-native-svg": "13.9.0",
     "react-native-web": "~0.19.6",
+    "react-native-webview": "^13.6.2",
     "webpack-config": "^7.5.0"
   },
   "devDependencies": {
