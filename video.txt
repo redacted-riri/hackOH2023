@@ -1,23 +1,36 @@
-// Make a powerpoint?
-
+Slide 1
 Introduction if wanted:
-Hi we are ....
+Hi we are the Lunabotics team!
 
+Slide 2
 Our project was for the Honda challenge focused on improving interior navigation. We thought of the biggest issues of
 navigation indoors, mainly that GPS struggles to work as precisely and reliably. Our solution was then to look for solutions
 that would have the least reliance on external factors, and we managed to come up with a solution that doesn't require any network access
 at all. 
-Introducing, product name!
 
+Slide 3
 Let us walk you through how this product could help a person in their daily life. You show up to a building you haven't been in before
-for a meeting, and whoops! You're almost late and don't know your way around. By scanning a QR code that is placed by the entrances of
-the building, our mobile app allows you to search up your destination and uses a path finding algorithm to get you to your destination 
-in the most optimized way.
-As an added bonus, there is the ability to toggle on the stairwell paths or just find paths that use an elevator for accessibility.* soon *
+for a meeting, and whoops! You're almost late and don't know your way around. There are no indoor maps and the service is extremely faulty.
+By scanning a QR code that is placed by the entrances of the building, our mobile app allows you to search up your destination and uses a 
+path finding algorithm to get you to your destination in the most optimized way without ever accessing a server or location data. 
 
+Slide 4
 So here's how we did it.
-We made simple maps that could easily be made for any building, all that is needed is a black and white map that is then turned into a 2d
-array using the values of 0's and 1's from the colors of the pixels provided. That array is then used to navigate and calculate the best 
-direction to go in the space provided. 
-Our mobile app can be downloaded on (ios or android or both) and it holds the library of QR codes where each room in the building has its
-own destination. 
+With a quick photo of a map in a buiding, we changed the format of them into a very rudimentary map with basic colors and lines to differentiate
+between room walls, stairs, elevators, and more. 
+
+Slide 5
+We then converted the edited map into a black and white map, allowing us to turn it into an array holding only binary values based on the color 
+of every image pixel. That array is then used to navigate and calculate the best direction to go in the space provided. 
+
+Slide 6
+Our mobile app is currently unfinished but can be downloaded on both IOS and android and it holds the library of QR codes where each room in the 
+building has its own destination. To increase accessibility, we planned to add the ability to toggle stairwell or elevator paths.
+
+Slide 7
+We ran into several bugs in the app creation. Our mobile app was written in JS and function structered, making it difficult to add images, which 
+are what our maps are, into the program. 
+
+Slide 8
+Although we were unable to complete the app, it currently has a viewable map with the ability to pick a wanted destination in which the 
+pathfinding algorithm will generate the most effecient path. 
