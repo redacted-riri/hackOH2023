@@ -1,0 +1,10 @@
+// Make a powerpoint?
+
+Introduction if wanted:
+Hi we are ....
+
+Our project was for the Honda challenge focused on improving interior navigation. We thought of the biggest issues of
+navigation indoors, mainly that GPS struggles to work as precisely and reliably. Our solution was then to look for solutions
+that would have the least reliance on external factors, and we managed to come up with a solution that doesn't require any network access
+at all. 
+Introducing, product name! 
