@@ -1,10 +1,11 @@
 import data1 from './data/mapData.json';
 
+
 let currLoc;
 let destLoc;
 let currBuilding;
 let locations;
-let path2d;
+export let path;
 
 
 function loadBuilding(locationID) {
@@ -54,12 +55,6 @@ function findPath(currLoc, destLoc) {
     var grid = new PF.Grid(matrix);
 
     var finder = new PF.AStarFinder();
-    var path = finder.findPath(77, 184, 179, 79, grid);
-    console.log(path);
-    path2d = new Path2D();
-    
-    for (let i = 1; i < path.length; i++) {
-        path2d.lineTo(path[i][1]*10, path[i][0]*10);
-    }
-    
+    path = finder.findPath(77, 184, 179, 79, grid);
+
 }

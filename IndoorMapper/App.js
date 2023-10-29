@@ -4,6 +4,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
 import Svg, { Path } from 'react-native-svg';
+import Mapper from "./mapper.js";
 
 // Main App Window 
 export default function App() {
@@ -72,10 +73,11 @@ export default function App() {
             contentWidth={400}
             contentHeight={200}
           >
-            <Image
+            <Mapper/>
+            {/* <Image
               style={{ width: '100%', height: '100%', resizeMode: 'contain', position:'relative'}}
               source={require('./data/photos/basement2.png')}
-            />
+            /> */}
         </ReactNativeZoomableView>
       </View>
     </View>
