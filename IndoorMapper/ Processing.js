@@ -5,7 +5,6 @@ let destLoc;
 let path;
 let currBuilding;
 let locations;
-let mapArray;
 
 
 function loadBuilding(locationID) {
