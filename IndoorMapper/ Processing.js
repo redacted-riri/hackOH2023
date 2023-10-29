@@ -1,51 +1,65 @@
-import data1 from './data/mapData.json';
-
+import jsonData from './data/libraryMapData.json';
 
 let currLoc;
 let destLoc;
 let currBuilding;
 let locations;
-export let path;
+let path2d;
 
 
-function loadBuilding(locationID) {
-    currBuilding = data1;
-    locations = currBuilding["locations"];
-    currLoc = currBuilding.locations[locationID];
-    destLoc = locationID;
+export function loadNewDestination(locationID) {
+    currBuilding = jsonData;
+    locations = currBuilding.locations;
+    for(let i = 0; i < locations.length; i++) {
+        if(currBuilding.locations[i].id == locationID.endValue) {
+            destLoc = locations[i].position;
+        }
+    }
     updateMap();
+    
 }
 
-export function loadNewDestination(destLocID) {
-    destLoc = destLocID;
-    console.log(destLoc);
-    findPath();
-}
-
-export function loadNewStart(currDestID) {
-    currLoc = currDestID;
-    console.log(currLoc);
+export function loadNewStart(locationID) {
+    currBuilding = jsonData;
+    locations = currBuilding.locations;
+    for(let i = 0; i < locations.length; i++) {
+        console.log(currBuilding.locations[i].id);
+        console.log(locationID);
+        if(currBuilding.locations[i].id == locationID.startValue) {
+            currLoc = locations[i].position;
+        }
+    }
+    updateMap();
 }
 
 // On update to a drop down (repath) or on load building
 function updateMap() {
+    console.log(currLoc);
+    console.log(destLoc)
     // if current and dest are the same then nothing happens
     if (currLoc == destLoc) {
         return;
     }
 
-    // if on the same floor, path
-    if (currLoc.position.floor = destLoc.position.floor)
-    {
-        path = findPath(currLoc, destLoc);
+    if (currLoc != null && destLoc != null) {
+        // if on the same floor, path
+        if(currLoc.length > 0 && destLoc.length > 0) {
+            if (currLoc[0].floor = destLoc[0].floor)
+            {
+                findPath(currLoc, destLoc);
+            }
+        }
+        
+        if(currLoc.length > 0 && destLoc.length > 0) {
+            // if on diffrent floors, path to nearest stair.
+            if (currLoc[0].floor != destLoc[0].floor) {
+                // Find all available stairs, find closest stair
+                findPath(currLoc, destLoc);
+            }
+        }
     }
 
-    // if on diffrent floors, path to nearest stair.
-    if (currLoc.position.floor != destLoc.position.floor) {
-        // Find all available stairs, find closest stair
 
-        path = findPath(currLoc, STAIRLOC);
-    }
 
 }
 
@@ -55,6 +69,17 @@ function findPath(currLoc, destLoc) {
     var grid = new PF.Grid(matrix);
 
     var finder = new PF.AStarFinder();
-    path = finder.findPath(77, 184, 179, 79, grid);
-
+    console.log("useful");
+    console.log(Math.floor(currLoc[0].x/10));
+    console.log(Math.floor(currLoc[0].y/10));
+    console.log(Math.floor(destLoc[0].x/10));
+    console.log(Math.floor(destLoc[0].y/10));
+    var path = finder.findPath(Math.floor(currLoc[0].x/10), Math.floor(currLoc[0].y/10), Math.floor(destLoc[0].x/10), Math.floor(destLoc[0].y/10), grid);
+    console.log(path);
+    path2d = new Path2D();
+    
+    for (let i = 1; i < path.length; i++) {
+        path2d.lineTo(path[i][1]*10, path[i][0]*10);
+    }
+    
 }

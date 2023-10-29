@@ -5,6 +5,7 @@ import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
 import Svg, { Path } from 'react-native-svg';
 import Mapper from "./mapper.js";
+import { CameraScanner } from './camera';
 
 // Main App Window 
 export default function App() {
@@ -25,9 +26,9 @@ export default function App() {
   const [startValue, setStartValue] = useState(null);
   const [endValue, setEndValue] = useState(null);
   const [items, setItems] = useState([
-    {label: 'Room 040', value: '40'},
-    {label: 'Room 126', value: '126'},
-    {label: 'Room 270', value: '270'}
+    {label: 'Room 040', value: 40},
+    {label: 'Room 126', value: 126},
+    {label: 'Room 270', value: 270}
   ]);
 
   return (
@@ -37,6 +38,7 @@ export default function App() {
       justifyContent: 'center',
       paddingTop: 50,}}>
       <View style={{ flexShrink: 1, height: '100%', width: '100%' }}>
+      <CameraScanner/>
         <DropDownPicker
           zIndex={2000}
           zIndexInverse={1000}
@@ -71,8 +73,8 @@ export default function App() {
             // dimensions when it's rendered naturally. Not the intrinsic size.
             // For example, an image with an intrinsic size of 400x200 will be rendered as 300x150 in this case.
             // Therefore, we'll feed the zoomable view the 300x150 size.
-            contentWidth={400}
-            contentHeight={200}
+            contentWidth={800}
+            contentHeight={400}
           >
             <Mapper/>
             {/* <Image
