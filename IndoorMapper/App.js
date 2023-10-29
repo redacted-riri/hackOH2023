@@ -24,8 +24,9 @@ export default function App() {
   const [startValue, setStartValue] = useState(null);
   const [endValue, setEndValue] = useState(null);
   const [items, setItems] = useState([
-    {label: 'Room 204', value: '204'},
-    {label: 'Room 305', value: '305'}
+    {label: 'Room 040', value: '40'},
+    {label: 'Room 126', value: '126'},
+    {label: 'Room 270', value: '270'}
   ]);
 
   return (
