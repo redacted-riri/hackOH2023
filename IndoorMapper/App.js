@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, ImageBackground, Text } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
@@ -29,12 +29,11 @@ export default function App() {
 
   return (
     <View style={{
-      backgroundColor: '#171717',
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
       paddingTop: 50,}}>
-      <View style={{ borderWidth: 5, flexShrink: 1, height: '100%', width: '100%' }}>
+      <View style={{ flexShrink: 1, height: '100%', width: '100%' }}>
         <DropDownPicker
           zIndex={2000}
           zIndexInverse={1000}
@@ -62,14 +61,15 @@ export default function App() {
           setItems={setItems}
         />
         <ReactNativeZoomableView
-            maxZoom={30}
+            maxZoom={3}
+            minZoom={1}
             // Give these to the zoomable view so it can apply the boundaries around the actual content.
             // Need to make sure the content is actually centered and the width and height are
             // dimensions when it's rendered naturally. Not the intrinsic size.
             // For example, an image with an intrinsic size of 400x200 will be rendered as 300x150 in this case.
             // Therefore, we'll feed the zoomable view the 300x150 size.
-            contentWidth={300}
-            contentHeight={150}
+            contentWidth={400}
+            contentHeight={200}
           >
             <Image
               style={{ width: '100%', height: '100%', resizeMode: 'contain' }}
