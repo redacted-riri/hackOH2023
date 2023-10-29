@@ -1,19 +1,15 @@
 import data1 from './data/mapData.json';
 
-let mapData = {};
 let currLoc;
 let destLoc;
 let path;
 let currBuilding;
 let locations;
 let mapArray;
-function loadMaps() {
-    // Load all maps into memory
-    mapData = {data1};
-}
 
-function loadNewBuilding(buildingID, locationID) {
-    currBuilding = mapData["ID"];
+
+function loadBuilding(locationID) {
+    currBuilding = data1;
     locations = currBuilding["locations"];
     currLoc = currBuilding.locations[locationID];
     destLoc = locationID;
@@ -23,6 +19,7 @@ function loadNewBuilding(buildingID, locationID) {
 export function loadNewDestination(destLocID) {
     destLoc = destLocID;
     console.log(destLoc);
+    findPath();
 }
 
 export function loadNewStart(currDestID) {
@@ -52,10 +49,6 @@ function updateMap() {
 
 }
 
-function createArray() {
-    mapArray = [];
-}
-
 function findPath(currLoc, destLoc) {
     var PF = require('pathfinding');  
     var matrix = [
@@ -66,7 +59,12 @@ function findPath(currLoc, destLoc) {
     var grid = new PF.Grid(matrix);
 
     var finder = new PF.AStarFinder();
-    var path = finder.findPath(1, 2, 4, 2, grid);
+    var tPath = finder.findPath(1, 2, 4, 2, grid);
 
-    // turn this path into path2d 
+    let path2d = new Path2D();
+    path2d.moveTo(tPath[0][1], tPath[0][0]);
+    for (let i = 1; i < path.length; i++) {
+        path2d.lineTo(tPath[i][1], tPath[i][0]);
+    }
+    path = path2d;
 }
