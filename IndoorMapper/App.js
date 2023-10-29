@@ -3,6 +3,7 @@ import { View, Image } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import {loadNewStart, loadNewDestination} from "./ Processing"
 import { ReactNativeZoomableView } from '@openspacelabs/react-native-zoomable-view';
+import Svg, { Path } from 'react-native-svg';
 
 // Main App Window 
 export default function App() {
